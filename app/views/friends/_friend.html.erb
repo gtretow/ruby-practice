@@ -1,0 +1,20 @@
+  <td>
+    <%= friend.first_name %> <%= friend.last_name %>
+  </td>
+
+  <td><%= friend.email %></td>
+
+  <td><%= friend.phone %></td>
+
+  <td><%= friend.twitter %></td>
+
+  <td><%= friend.user_id %></td>
+
+  <td>  
+    <%= link_to 'Edit', edit_friend_path(friend), class:"btn btn-secondary" %>   
+  </td>
+  <td>
+    <%= link_to 'Delete', @friend, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger" %>
+
+  </td>
+
